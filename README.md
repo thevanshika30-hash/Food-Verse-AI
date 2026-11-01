@@ -1,16 +1,83 @@
-# React + Vite
+# 🍽️ Food Verse AI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An AI-powered food analysis and smart cooking application built using React, Vite, FastAPI and Google Gemini.
 
-Currently, two official plugins are available:
+## 🌐 Live Website
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**[Visit Food Verse AI](https://food-verse-ai-orpin.vercel.app/)**
 
-## React Compiler
+## 📌 Project Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Food Verse AI is designed to help users understand food, analyze nutritional information, detect food freshness, and make smarter food-related decisions using Artificial Intelligence.
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Food Recognition** – Identifies food items from uploaded images.
+2. **Nutrition Analysis** – Provides nutritional information about food.
+3. **Freshness Detection** – Analyzes food freshness.
+4. **Smart Cooking** – Provides cooking suggestions and guidance.
+5. **Hygiene Monitoring** – Helps assess food hygiene.
+6. **Meal Planner** – Generates personalized meal plans.
+
+## 🛠️ Technologies Used
+
+### Frontend
+- React.js
+- Vite
+- HTML
+- CSS
+- JavaScript
+
+### Backend
+- Python
+- FastAPI
+- Google Gemini API
+
+### Deployment
+- GitHub
+- Vercel (Frontend)
+- Render (Backend)
+
+## ⚙️ Project Structure
+
+```text
+Food-Verse-AI/
+├── backend/
+│   ├── main.py
+│   └── requirements.txt
+├── src/
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+├── public/
+├── package.json
+└── README.md
+```
+
+## 🚀 How to Run Locally
+
+### Frontend
+
+```bash
+npm install
+npm run dev
+```
+
+### Backend
+
+```bash
+cd backend
+pip install -r requirements.txt
+uvicorn main:app --reload --port 8001
+```
+
+Add your Gemini API key to `backend/.env`. Never upload this file to GitHub.
+
+## 👩‍💻 Project Information
+
+**Project Name:** Food Verse AI
+
+**GitHub Repository:** [Food-Verse-AI](https://github.com/thevanshika30-hash/Food-Verse-AI)
+
+**Live Website:** [https://food-verse-ai-orpin.vercel.app/](https://food-verse-ai-orpin.vercel.app/)
