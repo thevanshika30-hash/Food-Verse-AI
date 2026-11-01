@@ -29,7 +29,7 @@ app = FastAPI(
 # Allow React frontend to communicate with Python backend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
+    allow_origins=["https://food-verse-ai-orpin.vercel.app",
         "http://localhost:5173",
         "http://localhost:5174",
         "http://localhost:5175",
