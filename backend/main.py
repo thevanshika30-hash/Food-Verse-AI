@@ -115,4 +115,3 @@ async def meal_planner(request: MealPlanRequest):
             "status": "error",
             "message": str(e)
         }
-
