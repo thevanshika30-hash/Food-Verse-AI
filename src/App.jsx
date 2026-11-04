@@ -30,7 +30,6 @@ function App() {
   setError('')
 }
   // Recognize food using AI
-  // Recognize food using AI
 async function handleFoodRecognition() {
   if (!imageName) {
     setError('Please upload a food image first.')
@@ -54,7 +53,7 @@ async function handleFoodRecognition() {
     formData.append('file', file)
 
     const response = await fetch(
-      'http://127.0.0.1:8001/api/recognize-food',
+      'https://food-verse-ai-backend-xnsu.onrender.com/api/recognize-food',
       {
         method: 'POST',
         body: formData
@@ -99,7 +98,7 @@ async function handleFoodRecognition() {
       formData.append('file', file)
 
       const response = await fetch(
-        'http://127.0.0.1:8001/api/nutrition-analysis',
+        'https://food-verse-ai-backend-xnsu.onrender.com/api/nutrition-analysis',
         {
           method: 'POST',
           body: formData
@@ -144,7 +143,7 @@ async function handleFoodRecognition() {
       formData.append('file', file)
 
       const response = await fetch(
-        'http://127.0.0.1:8001/api/freshness-detection',
+        'https://food-verse-ai-backend-xnsu.onrender.com/api/freshness-detection',
         {
           method: 'POST',
           body: formData
@@ -185,7 +184,7 @@ async function handleSmartCooking() {
     formData.append('file', file)
 
     const response = await fetch(
-      'http://127.0.0.1:8001/api/smart-cooking',
+      'https://food-verse-ai-backend-xnsu.onrender.com/api/smart-cooking',
       {
         method: 'POST',
         body: formData
@@ -225,7 +224,7 @@ async function handleHygieneMonitoring() {
     formData.append('file', file)
 
     const response = await fetch(
-      'http://127.0.0.1:8001/api/hygiene-monitoring',
+      'https://food-verse-ai-backend-xnsu.onrender.com/api/hygiene-monitoring',
       {
         method: 'POST',
         body: formData
@@ -258,7 +257,7 @@ async function handleMealPlanner() {
     const days = document.querySelector('#meal-days').value
 
     const response = await fetch(
-      'http://127.0.0.1:8001/api/meal-planner',
+      'https://food-verse-ai-backend-xnsu.onrender.com/api/meal-planner',
       {
         method: 'POST',
         headers: {
